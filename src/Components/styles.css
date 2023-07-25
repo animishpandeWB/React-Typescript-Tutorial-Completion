@@ -1,0 +1,140 @@
+.input {
+    display: flex;
+    width: 95%;
+    position: relative;
+    align-items: center;
+}
+
+.input--box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+    font-family: 'Nunito', sans-serif;
+}
+
+.input--box:focus {
+    box-shadow: 0 0 10px 1000px rgb(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.input--submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    padding-top: 5px;
+    font-size: 20px;
+    background-color: #0D1282;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    color: #EEEDED;
+}
+
+.input--submit:hover {
+    background-color: #068FFF;
+}
+
+.input--submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todo--list {
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #F86F03;
+}
+
+.todo--list--heading {
+    font-size: 30px;
+    color: #EEEDED;
+}
+
+.remove {
+    background-color: #FFB84C;
+}
+
+.todos--single {
+    display: flex;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #D71313;
+    transition: 0.2s;
+}
+
+.todos--single:hover {
+    box-shadow: 0 0 5px #0D1282;
+    transform: scale(1.03);
+}
+
+.todos--single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.todos--single--text:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.dragactive {
+    background-color: #CECE5A;
+}
+
+.dragcomplete {
+    background-color: #B04759;
+}
+
+@media (max-width: 1100px) {
+    .todo--list {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .todos--single {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todo-list {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #EEEDED;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0D1282;
+}
+
+.heading {
+  font-weight: 700;
+  color: #F0DE36;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}
